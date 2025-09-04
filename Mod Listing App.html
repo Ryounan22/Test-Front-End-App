@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="UI.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modification Lister</title>
+</head>
+<body>
+
+    <header>
+        <h1>Modifications Lister</h1>
+        <p>List mods that you want to download for your apps!</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h3>Game</h3>
+            <p>For which game is the mod?</p>
+                <form id="GameForm">
+                    <label for="GameName">Game Name: </label>
+                    <input type="text"id="GameName" name="GameName"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+        </section>
+
+        <section>
+            <h3>List your Mods</h3>
+                <form id="ModForm">
+                    <label for="ModName">Modification Name: </label>
+                    <input type="text"id="ModName" name="ModName"></br><br>
+                    <label for="ModLink">Modification Link: </label>
+                    <input type="url"id="ModLink" name="ModLink"></br><br>
+                    <input type="submit" value="Submit">
+                </form>
+        </section>
+
+        <section>
+            <h2>Mods List</h2>
+             <div id="ModsList"></div>
+        </section>
+
+        
+        <div id="popup">
+            <div id="popupContent">
+                <p id="popupMessage"></p>
+                <button onclick="closePopup()">OK</button>
+            </div>
+        </div>
+ 
+        <script src="script.js"></script>
+
+    </main>
